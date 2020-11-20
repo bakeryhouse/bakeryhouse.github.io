@@ -300,19 +300,7 @@
 				$(".clickDrink").css("color","#41312F");
 			});
 
-			
-
 		})
-
-
-	var limitFunc = function(){
-    	if (window.innerWidth>999){
-      	 /*your functions for big screen*/
-    	console.log('bigScreen')
-    }
-
-};
-
 
 
 	$(window).on('load', function(){
@@ -323,7 +311,8 @@
 		   		"container": "#ig",
 		    	"items": 4,
 				"items_per_row": 1,
-				"margin": 2
+				"margin": 8,
+
 	  		});
 		  }else {
 		  	$.instagramFeed({
@@ -334,8 +323,6 @@
 				"margin": 2
 	  		});	
 		  }
-
-  		
 
 	});
 
