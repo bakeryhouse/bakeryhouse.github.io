@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Orders ✿ Bakery House La Cañada Flintridge</title>
+	<meta charset="utf-8">	
+	<link href="assets/css/main.css" media="all" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="" />
+	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+        crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/jquery.instagramFeed.js"></script>
+	<script type="text/javascript" src="./assets/js/circletype.min.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery.fittext.js"></script>
+</head>
+<body>
+	<div id="header">
+		<h1>BAKERY HOUSE</h1>
+		<div class="hours">
+			<div class="statement"></div>
+		</div> <div></div> 
+		<div class="secondShadow"></div>
+		<hr>
+		<div class="nav">
+			<a href="#menu"><button>Menu</button></a>
+			<button>Custom Orders</button>
+			<a href="#location"><button>Location</button></a>
+			<button><a href="tel:818-248-0945">Phone</a></button>
+			<a href="https://www.instagram.com/lc_bakeryhouse/" target="_blank"><button>Instagram</button></a>
+		</div>
+		<hr>
+	</div>
+	<div id="wrapper">
+			<div class="orders">
+				<h1>CUSTOM ORDERS</h1>
+				<h2>CAKES</h2>
+				<h3>SHEET CAKES</h3> <h3>CHIFFON CAKES</h3>
+				<h2>CUPCAKES</h2>
+				<h2>SPECIALTY</h2>
+			</div>
+			
+			<div class="time">
+				<h1>OPENING HOURS</h1>
+				<h2>we open MONDAY – SATURDAY from 8:00AM – 7:00PM</h2>
+				<h2><a href="tel:818-248-0945">&#x260F; 818 - 248 - 0945 &#x260F;</a></h2>
+			</div>
+			
+			
+			<div class="footer">
+				<div class="text left">
+					<p>La Cañada Bakery House</p>
+					<p>2383 Foothill Blvd, La Cañada-Flintridge, CA 91011</p>
+				 </div>	
+				 <div class="text right">
+				 	<p><a href="tel:818-248-0945">&#x260F; 818 – 248 – 0945</a></p>
+				 	<p><a href="https://www.instagram.com/lc_bakeryhouse" target="_blank">Instagram</a></p>
+				 </div>
+				<p class="copy">&#169; 2020</p>	
+			</div>
+
+
+	</div>		
+	<script>
+
+		$(document).ready(function() {
+
+
+			var today = new Date(),
+				n = today.getHours(),
+				date = $("<div/>"); 
+	 		
+			date.addClass("statement");
+
+
+			if ((n < 19) && (n >= 8)){
+				$(".statement").append("we're open!");
+				$(".statement").css("color","#d71e40");
+				$(".hours").css("background-color", "#f5d49f")
+			}else{
+				$(".statement").append("we're closed");
+				$(".hours").css("background-color", "#d71e40")
+				$(".statement").css("color","white");
+			}
+
+
+		})
+
+
+
+	</script>	
+</body>
+</html>

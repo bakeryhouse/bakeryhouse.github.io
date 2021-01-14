@@ -412,13 +412,25 @@ a.instagram-image img {
 	text-shadow: -3px 2px 6px rgb(223,176,95);
 }
 
+.orders {
+	position: relative;
+	margin-top: 20vh;
+	margin-left: 5vw;
+}
+
+.orders h1{
+	font-size: 2.5em;
+}
+
+
 @media only screen 
 	and (min-device-width: 320px)
 	and (max-device-width: 650px)  {
 
 		#header {
 			height: 10vh;
-			right: 4.5vw;
+			left: 11vw;
+			padding-top: 2vh;
 		}
 
 		#header h1 { 	
@@ -449,6 +461,7 @@ a.instagram-image img {
 
 		.neon {
 			height: 60vh;
+			left: 9vw;
 		}
 
 		img.logo {
@@ -457,23 +470,25 @@ a.instagram-image img {
 		}
 
 		.about {
-		    margin-left: 12vw;
 		    position: relative;
+		    left: 12vw
 		}
 
 		.about h2 {
 			width: 85vw;
 			font-size: 3em;
+			margin-left: 8vw;
 		}
 
 		.about p {
 			width: 90vw;
 			padding-top: 3vh;
-			font-size: 1.5em;
+			font-size: 2em;
 		}
 
 		.set1 {
-			height: 180vh
+			height: 180vh;
+			left: 8vw;
 		}
 
 		.content {
@@ -494,8 +509,12 @@ a.instagram-image img {
 		    font-size: 8em;
 		}
 
+/*		#menu {
+			 scroll-margin-top: 200px;
+		}*/
+
 		.menu {
-			height: 85vh;
+			height: 90vh;
 			width: 95vw;
 		}
 
@@ -505,6 +524,11 @@ a.instagram-image img {
 
 		.specialty, .drink {
 			margin-top: 2vh;
+		}
+
+		#location {
+			scroll-margin-top: 180px;
+			height: 100vh;
 		}
 
 		.location{
@@ -521,6 +545,7 @@ a.instagram-image img {
 
 		.location iframe{
 			width: 95vw;
+			margin-left: 7vw;
 		}
 
 		.time {
@@ -542,6 +567,7 @@ a.instagram-image img {
 
 		.instagram_gallery {
 			height: 205vh;
+			margin-left: 7vw;
 		}
 
 		a.instagram-image img {
@@ -550,12 +576,15 @@ a.instagram-image img {
 
 		#thankYou{
 			font-size: 5.5em;
-			left: 1vw;
+			left: 12vw;
 			top: 5vh;
 		}
 
 		#kThanks {
-			font-size: 5.5em
+			font-size: 5.5em;
+			top: 32vh;
+    		right: -22vw;
+    		width: 90vw;
 		}
 
 		.end {
@@ -563,26 +592,28 @@ a.instagram-image img {
 		}
 
 		.footer {
-			height: 15vh;
-		    width: 103vw;
-		    margin-left: 3vw;
-		    margin-right: 3vw;
+			height: 25vh;
+			margin-left: 0;
+			margin-right: 0;
+			width: 122vw;
 		}
 
 		.left {
-			max-width: 50vw;
+			max-width: 45vw;
+			margin-left: 10vw
 		}
 
 		.right{
 			padding-left: 7vw;
+			max-width: 45vw
 		}
 
 		.text {
-			font-size: 2em;
+			font-size: 2.66em;
 		}
 
 		.copy {
-			font-size: 1.5em;
+			font-size: 2em;
 			bottom: 0vh;
 			right: 3vw;
 		}
@@ -599,7 +630,7 @@ a.instagram-image img {
 
 		#header {
 			height: 10vh;
-			right: 0vw;
+			left: 8vw;
 		}
 
 		#header h1 { 	
@@ -636,22 +667,26 @@ a.instagram-image img {
 		.neon {
 			margin-top: 20vh;
 			height: 60vh;
+			left: 5vw;
+		}
+
+		.about {
+			left: 9vw;
 		}
 
 		.set1 {
-			height: 65vh
+			height: 180vh;
+			left: 3vw;
 		}
 
 		.content img{
-			max-width: 22vw;
-		}
-
-		#menu {
-			 scroll-margin-top: 180px;
+			max-width: 90vw;
+			padding-top: 2vh;
+			padding-bottom: 3vh;
 		}
 
 		.menu {
-			height: 95vh;
+			height: 50vh;
 		}
 
 		.menu h1 {
@@ -673,7 +708,8 @@ a.instagram-image img {
 		}
 
 		#location {
-			 scroll-margin-top: 180px;
+			 margin-top: 0;
+			 height: 90vh;
 		}
 
 		.location {
@@ -687,12 +723,12 @@ a.instagram-image img {
 		.location iframe{
 			margin-top: 3vh;
 			margin-left: 1vw;
-			width: 85vw;
+			width: 95vw;
 			height: 65vh;
 		}
 
 		.time {
-			height: 40vh
+			height: 25vh
 		}
 
 		.time h1{
@@ -707,29 +743,48 @@ a.instagram-image img {
 			height: 120vh;
 		}
 
-		.footer {
-			position: relative;
-			height: 25vh;
-			margin-left: 5vw;
-			margin-right: 5vw;
+		.text {
+			font-size: 2.33em;
 		}
 
-		.text {
-			font-size: 1.5em;
+		.left {
+			max-width: 50vw
+		}
+
+		.right {
+			padding-left: 4vw;
+			max-width: 40vw
+		}
+
+		.end {
+			height: 90vh
 		}
 
 		#thankYou {
-			top: 2vh;
-			left: -10vw;
-			font-size: 3.5em;
+			top: 48vh;
+    		left: 0vw;
+			font-size: 5.5em;
 			letter-spacing: 0.1em;
 		}
 
 		#kThanks {
-			top: 2vh;
-			left: -10vw;
-			font-size: 3.5em;
+			top: 70vh;
+			left: 24vw;
+			font-size: 5.5em;
 			letter-spacing: 0.1em;
+		}
+
+		.footer {
+			position: relative;
+			height: 20vh;
+			margin-left: 0;
+			margin-right: 0;
+			width: 114vw;
+
+		}
+
+		.copy {
+			font-size: 2em
 		}
 
   }

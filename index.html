@@ -22,8 +22,8 @@
 		<div class="secondShadow"></div>
 		<hr>
 		<div class="nav">
-			<a href="#menu"><button>Menu</button></a>
-			<button>Custom Orders</button>
+			<a href="#menuNav"><button>Menu</button></a>
+			<!-- <button>Custom Orders</button> -->
 			<a href="#location"><button>Location</button></a>
 			<button><a href="tel:818-248-0945">Phone</a></button>
 			<a href="https://www.instagram.com/lc_bakeryhouse/" target="_blank"><button>Instagram</button></a>
@@ -41,33 +41,33 @@
 
 			<div class="set1">
 				<div class="content">
-			  		<img src="assets/img/IMG_0069.jpg">
+			  		<img src="assets/img/website-01.png">
 			  		<p class="caption">BREAD</p>
 				</div>
 				<div class="content">
-			    	<img src="assets/img/bg.jpg">
+			    	<img src="assets/img/website-02.png">
 			    	<p class="caption">COOKIES</p>
 
 			  	</div>
 			  	<div class="content">
-			    	<img src="assets/img/bg.jpg">
+			    	<img src="assets/img/website-03.png">
 			    	<p class="caption">CAKE</p>
 			  	</div>
 			</div>
-			<div class="menu">
+			<div id="menuNav" class="menu">
 				<h1 id="menu">MENU</h1>
-				<h2 class="clickBread highlight menuActive">BREADS</h2> <h2 class="clickDonut">DONUTS</h2> <h2 class="clickCookie">COOKIES</h2> <h2 class="clickCake">CAKES</h2> <h2 class="clickSpecial">SPECIALTY</h2> <h2 class="clickDrink">DRINKS</h2>
+				<h2  class="clickBread highlight menuActive">BREADS</h2> <h2 class="clickDonut">DONUTS</h2> <h2 class="clickCookie">COOKIES</h2> <h2 class="clickCake">CAKES</h2> <h2 class="clickSpecial">SPECIALTY</h2> <h2 class="clickDrink">DRINKS</h2>
 				<div class="bread items active ">
 					<p>reb bean ❁ soborro ❁ mochi bread ❁ whole red bean ❁ butter cream ❁ green bean soborro ❁  red bead soborro ❁ chocolate soborro ❁ soborro stick ❁ cream ❁ coffee bun ❁ cream cheese bun ❁ mocha ❁ custard cream ❁ sweet potato ❁ pumpkin ❁ pizza ❁ chocolate muffin ❁ blueberry muffin ❁ walnut muffin ❁ morning roll ❁ salad bread ❁ milk loaf ❁ wheat loaf ❁ raisin loaf</p>
 				</div>
 				<div class="donut">
-					<p>red bean ❀ croquet ❀ sesame red bean ❀ white bean ❀ twisted donut</p>
+					<p>red bean ❀ croquette ❀ sesame red bean ❀ white bean ❀ twisted donut</p>
 				</div>
 				<div class="cookie">
 					<p>white bean ✽ romeo ✽ cheese ✽ chocolate ✽ marble ✽ oatmeal ✽ cinnamon yam manjyu ✽ cinnamon green bean manjyu ✽ white bean manjyu ✽ thin almond senbei ✽  pastry ✽ sesame ✽ corn ✽ madeleine ✽ cinnamon  ✽ chocolate buche ✽ vanilla buche ✽ butter ring ✽ almond stick ✽ sesame ✽ assortment of macarons</p>
 				</div>
 				<div class="cake">
-					<p>vanilla ✿ blueberry chiffon ✿ chocolate chiffon ✿ green tea chiffon ✿ mocha chiffon ✿ big castella ✿ small castella ✿ small chocolate ✿ vanilla mini cake ✿ chocolate mini cake ✿ orange cupcakes ✿ chocolate pound cake ✿ vanilla roll cake ✿ green tea roll cake ✿ chocolate roll cake ✿ sponge cake ✿ <a href="">custom cakes</a></p>
+					<p>vanilla ✿ blueberry chiffon ✿ chocolate chiffon ✿ green tea chiffon ✿ mocha chiffon ✿ big castella ✿ small castella ✿ small chocolate ✿ vanilla mini cake ✿ chocolate mini cake ✿ orange cupcakes ✿ chocolate pound cake ✿ vanilla roll cake ✿ green tea roll cake ✿ chocolate roll cake ✿ sponge cake <!-- ✿ <a href="">custom cakes</a> --></p>
 				</div>
 				<div class="specialty">
 					<p>mochi [filled with red bean] ✻ shaved iced ✻ vanilla napoleon ✻ chocolate napoleon ✻ healthy castella ✻ tofu cracker</p>
@@ -104,7 +104,7 @@
 					<p>2383 Foothill Blvd, La Cañada-Flintridge, CA 91011</p>
 				 </div>	
 				 <div class="text right">
-				 	<p><a href="tel:818-248-0945">&#x260F; 818 – 248 – 0945</a></p>
+				 	<p><a href="tel:818-248-0945">&#x260F; 818 – 248 – 0945 &#x260F;</a></p>
 				 	<p><a href="https://www.instagram.com/lc_bakeryhouse" target="_blank">Instagram</a></p>
 				 </div>
 				<p class="copy">&#169; 2020</p>	
@@ -114,7 +114,24 @@
 	</div>		
 	<script>
 
+		$(document).on('click', 'a[href^="#"]', function(e) {
+		    // target element id
+		    var id = $(this).attr('href');
+		    
+		    // target element
+		    var $id = $(id);
+		    if ($id.length === 0) {
+		        return;
+		    }
+		    e.preventDefault();
+		    
+		    var pos = $id.offset().top - 200;
+		    
+		    $('body, html').animate({scrollTop: pos});
+		});
+
 		$(document).ready(function() {
+
 
 			var thanks = new CircleType(document.getElementById('thankYou'))
   			.radius(360);
@@ -311,9 +328,11 @@
 		   		"container": "#ig",
 		    	"items": 4,
 				"items_per_row": 1,
-				"margin": 8,
+				"margin": 4,
+				"width" : "100%"
 
 	  		});
+		  	console.log (innerWidth)	
 		  }else {
 		  	$.instagramFeed({
 		    	"username": "lc_bakeryhouse",
