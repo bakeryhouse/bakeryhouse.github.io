@@ -8,12 +8,6 @@
 	<link href="assets/css/main.css" media="all" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="" />
 	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
-        crossorigin="anonymous"></script>
-	<script type="text/javascript" src="assets/js/jquery.instagramFeed.js"></script>
-	<script type="text/javascript" src="./assets/js/circletype.min.js"></script>
-	<script type="text/javascript" src="./assets/js/jquery.fittext.js"></script>
 </head>
 <body>
 	<div id="header" class="inner">
@@ -25,9 +19,8 @@
 		<hr>
 		<div class="nav">
 			<a href="./index.html"><button>Home</button>
-			<a href="#menu"><button>Menu</button></a>
 			<button class="here">Custom Orders</button>
-			<a href="#location"><button>Location</button></a>
+			<a href="http://maps.google.com/?q=2383 Foothill Blvd, La Cañada Flintridge, CA 91011" target="_blank"><button>Location</button></a>
 			<button><a href="tel:818-248-0945">Phone</a></button>
 			<a href="https://www.instagram.com/lc_bakeryhouse/" target="_blank"><button>Instagram</button></a>
 		</div>
@@ -35,51 +28,104 @@
 	</div>
 	<div id="wrapper">
 			<div class="orders">
-				<ul><h1>CAKES</h1>
-					<li>SHEET CAKES</li>
-					<li>CHIFFON CAKES</li>
-					<li>CUPCAKES</li>
+
+				<ul class="order-list"><h1><span>✿</span> CAKES <span>✿</span></h1>
+					<li><h2>SHEET CAKES <img class="show-button sheet" src="./assets/img/button.svg"></h2></li>
+					<div class="details dSheet">
+						<p class="parragraph">We offer three different sizes, two flavor options (vanilla and chocolate). <br> We can decorate to your liking !!</p>
+							<ul class="product">
+								<li class="parragraph">¼ sheet : 6" x 8.5"</li>
+								<li class="parragraph">½ sheet : 12" x 17"</li>  
+								<li class="parragraph">full : 24" x 17"</li> 
+							</ul>
+							<br>
+						<div class="cake-images"> 
+							<img class="placeholder" src="assets/img/sheetCake2.png">
+							<img class="placeholder" src="assets/img/sheetCake.png">
+						</div>
+					</div>
+					<li><h2>CHIFFON CAKES <img class="show-button chiffon" src="./assets/img/button.svg"></h2></li>
+					<div class="details dChiffon">
+						<p class="parragraph">Our signature Chiffon cakes come in five different flavours. <br> They come in their classic decoration but we can always customise the decoration and filling to your liking !!<br>Our Chiffon Cakes come in two sizes, small (5–6 servings) & large (7–8).</p>
+							<ul class="product">
+								<li class="parragraph">chocolate</li>
+								<li class="parragraph">blueberry</li>  
+								<li class="parragraph">green tea</li> 
+								<li class="parragraph">mocha</li> 
+								<li class="parragraph">vanilla</li> 
+							</ul>
+						<div class="parragraph"><br><br></div>		
+						<div class="cake-images"> 
+							<img class="chiffonImg" src="assets/img/chiffon1.png">
+							<img class="chiffonImg" src="assets/img/chiffon2.png">
+							<img class="chiffonImg" src="assets/img/chiffon3.png">
+							<img class="chiffonImg" src="assets/img/chiffon4.png">
+							<img class="chiffonImg" src="assets/img/chiffon5.png">
+						</div>	
+					</div>	
+					<li><h2>CUPCAKES <img class="show-button cupcakes" src="./assets/img/button.svg"></h2></li>
+					<div class="details dCupcakes">
+						<p class="parragraph"> Our cupcakes come in two flavors: rich chocolate or sweet vanilla. <br> We can decorate them in your favourite colour and sprinkles. <br> Minimum order of 20 cupcakes !!</p>	
+						<div class="images"> 
+							<img class="cupImg" src="assets/img/cupcakes.png">
+						</div>	
+					</div>	
 				</ul>
-				<br><br>
-				<ul><h1>SPECIALTY</h1>
-					<li>CROQUETTES</li>
-					<li>DONUTS</li>
-					<li>MOCHI</li>
-				</ul>	
-			</div>
-			<br><br><br><br>
-			<!-- <div class="time">
-				<h1>OPENING HOURS</h1>
-				<h2>we open MONDAY – SATURDAY from 8:00AM – 7:00PM</h2>
-				<h2><a href="tel:818-248-0945">&#x260F; 818 - 248 - 0945 &#x260F;</a></h2>
-			</div>
-			 -->
-			
-			<div class="footer">
+				<ul class="order-list"><h1> <span>✻</span>SPECIALTY<span>✻</span> </h1>
+					<li><h2>CROQUETTES <img class="show-button croquettes" src="./assets/img/button.svg"></h2></li>
+					<div class="details dCroquettes">
+						<p class="parragraph">A customer favourite, we only make a small batch daily. <br> If you would like us to place an order do call us or visit our store !!</p>
+						<div class="images"> 
+							<div class="placeholder"></div>
+							<div class="placeholder"></div>
+							<div class="placeholder"></div>
+							<img src="">	
+						</div>
+					</div>		
+					<li><h2>DONUTS <img class="show-button orderDonut" src="./assets/img/button.svg"></h2></li>
+					<div class="details dDonut">
+						<p class="parragraph">We have an assortment of fresh traditional Korean donuts available daily. <br> If you would like us to place an order do call us or visit our store !!</p>
+							<ul class="product">
+								<li class="parragraph">red bean donut</li>
+								<li class="parragraph">glutinous rice donut</li>  
+								<li class="parragraph">white bean donut</li> 
+								<li class="parragraph">twsited donut</li> 
+							</ul>
+						<div class="parragraph"><br><br><br><br><br></div>	
+						<div class="images"> 
+							<img class="cupImg" src="assets/img/assoDonuts.png">
+						</div>	
+					</div>		
+					<li><h2>MOCHI <img class="show-button mochi" src="./assets/img/button.svg"></h2></li>
+					<div class="details dMochi">
+						<p class="parragraph">Mochi filled with red bean paste is only available on special days.<br> If you are interesed to know when we have them give us a call or check our Instagram's stories !!</p>
+					</div>
+					
+				</ul>
+
+		</div>
+		<div class="spacing"><br><br><br></div>
+		<div class="footer">
 				<div class="text left">
 					<p>La Cañada Bakery House</p>
 					<p>2383 Foothill Blvd, La Cañada-Flintridge, CA 91011</p>
 				 </div>	
 				 <div class="text right">
-				 	<p>call us<br><a href="tel:818-248-0945">&#x260F; 818 – 248 – 0945 &#x260F;</a></p>
+				 	<p><a href="tel:818-248-0945">&#x260F; 818 – 248 – 0945 &#x260F;</a></p>
 				 	<p><a href="https://www.instagram.com/lc_bakeryhouse" target="_blank">Instagram</a></p>
 				 </div>
 				<p class="copy">&#169; 2021</p>	
-			</div>
+		</div>	
+	</div>
 
-
-	</div>		
 	<script>
 
 		$(document).ready(function() {
-
-
 			var today = new Date(),
 				n = today.getHours(),
 				date = $("<div/>"); 
 	 		
 			date.addClass("statement");
-
 
 			if ((n < 19) && (n >= 8)){
 				$(".statement").append("we're open!");
@@ -91,10 +137,77 @@
 				$(".statement").css("color","white");
 			}
 
+		    $(".sheet").click(function (e) {
+		        e.preventDefault();
+		        if($(".dSheet").is(":visible")) {
+		            $(".dSheet").fadeOut(300);
+		             $(".sheet").css("transform", "none")
+		        } else {
+		            $(".dSheet").fadeIn(450);
+		            $(".sheet").css("transform", "rotate(180deg)")
+		        };
+		    });
+
+		    $(".chiffon").click(function (e) {
+		        e.preventDefault();
+		        if($(".dChiffon").is(":visible")) {
+		            $(".dChiffon").fadeOut(300);
+		             $(".chiffon").css("transform", "none")
+		        } else {
+		            $(".dChiffon").fadeIn(450);
+		            $(".chiffon").css("transform", "rotate(180deg)")
+		        };
+		    });
+
+		    $(".cupcakes").click(function (e) {
+		        e.preventDefault();
+		        if($(".dCupcakes").is(":visible")) {
+		            $(".dCupcakes").fadeOut(300);
+		             $(".cupcakes").css("transform", "none")
+		        } else {
+		            $(".dCupcakes").fadeIn(450);
+		            $(".cupcakes").css("transform", "rotate(180deg)")
+		        };
+		    });
+
+		    $(".croquettes").click(function (e) {
+		        e.preventDefault();
+		        if($(".dCroquettes").is(":visible")) {
+		            $(".dCroquettes").fadeOut(300);
+		             $(".croquettes").css("transform", "none")
+		        } else {
+		            $(".dCroquettes").fadeIn(450);
+		            $(".croquettes").css("transform", "rotate(180deg)")
+		        };
+		    });
+
+		    $(".orderDonut").click(function (e) {
+		        e.preventDefault();
+		        if($(".dDonut").is(":visible")) {
+		            $(".dDonut").fadeOut(300);
+		             $(".orderDonut").css("transform", "none")
+		        } else {
+		            $(".dDonut").fadeIn(450);
+		            $(".orderDonut").css("transform", "rotate(180deg)")
+		        };
+		    });
+
+		    $(".mochi").click(function (e) {
+		        e.preventDefault();
+		        if($(".dMochi").is(":visible")) {
+		            $(".dMochi").fadeOut(450);
+		            $(".mochi").css("transform", "none");
+		            $(".spacing").css("height","0")
+		        } else {
+		            $(".dMochi").fadeIn(450);
+		            $(".mochi").css("transform", "rotate(180deg)");
+		            
+		        };
+		    });
+
+
 
 		})
-
-
 
 	</script>	
 </body>
