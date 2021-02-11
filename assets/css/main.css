@@ -201,11 +201,13 @@ img.logo {
 
 .content:hover img {
 	filter: grayscale(1);
+	cursor: pointer;
 }
 
 .content:hover .caption {
 	display: block;
 	filter: blur(0);
+	cursor: pointer;
 }
 
 #menu {
@@ -273,6 +275,10 @@ img.logo {
 .cake a {
 	font-family: "bakeryLight";
 	color: #41312F
+}
+
+.cake a:hover {
+	color: rgb(215, 30, 64);
 }
 
 .menuActive{
@@ -643,6 +649,7 @@ img.cupImg{
 		}
 
 		#location {
+			top: 10vh;
 			scroll-margin-top: 180px;
 			height: 100vh;
 		}
@@ -688,17 +695,19 @@ img.cupImg{
 
 		a.instagram-image img {
 			max-width: 100vw;
+			width: 100vw;
 		}
+
 
 		#thankYou{
 			font-size: 5.5em;
 			left: 12vw;
-			top: 5vh;
+			top: 15vh;
 		}
 
 		#kThanks {
 			font-size: 5.5em;
-			top: 32vh;
+			top: 45vh;
     		right: -22vw;
     		width: 90vw;
 		}
@@ -840,8 +849,9 @@ img.cupImg{
 		}
 
 		#location {
-			 margin-top: 0;
-			 height: 90vh;
+			top: 10vh;
+			margin-top: 0;
+			height: 90vh;
 		}
 
 		.location {
@@ -871,10 +881,6 @@ img.cupImg{
 			font-size: 2em
 		}
 
-		.instagram_gallery {
-			height: 120vh;
-		}
-
 		.text {
 			font-size: 2.33em;
 		}
@@ -893,14 +899,14 @@ img.cupImg{
 		}
 
 		#thankYou {
-			top: 48vh;
+			top: 65vh;
     		left: 0vw;
 			font-size: 5.5em;
 			letter-spacing: 0.1em;
 		}
 
 		#kThanks {
-			top: 70vh;
+			top: 85vh;
 			left: 24vw;
 			font-size: 5.5em;
 			letter-spacing: 0.1em;
