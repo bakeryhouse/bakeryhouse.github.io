@@ -341,31 +341,30 @@
 
 		})
 
-	// $(window).on('load', function(){
-	// 	$.instagramFeed({
-	// 	    	"username": "lc_bakeryhouse",
-	// 	   		"container": "#ig",
-	// 	    	"items": 6,
-	// 			"items_per_row": 3,
-	// 			"margin": 2
-	//   		});	
+	$(window).on('load', function(){
 
-	// 	if (window.innerWidth<600){
-	// 	  		$.instagramFeed({
-	// 	    	"username": "lc_bakeryhouse",
-	// 	   		"container": "#ig",
-	// 	    	"items": 4,
-	// 			"items_per_row": 1,
-	// 			"margin": 4,
-	// 			"width" : "100%"
+		if (window.innerWidth<600){
+		  		$.instagramFeed({
+		    	"username": "lc_bakeryhouse",
+		   		"container": "#ig",
+		    	"items": 4,
+				"items_per_row": 1,
+				"margin": 4,
+				"width" : "100%"
 
-	//   		});
-	// 	  	console.log (innerWidth);	
-	// 	  }else{
+	  		});
+		  	console.log (innerWidth);	
+		  }else{
+		  		$.instagramFeed({
+		    	"username": "lc_bakeryhouse",
+		   		"container": "#ig",
+		    	"items": 6,
+				"items_per_row": 3,
+				"margin": 2
+	  		});	
+		  }
 
-	// 	  }
-
-	// });
+	});
 
 
 	</script>	
