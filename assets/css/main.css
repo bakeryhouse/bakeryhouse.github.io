@@ -44,8 +44,8 @@ body {
 }
 
 .hours {
-	width: 7vw;
-	height: 7vh;
+	width: 10vw;
+	height: 9vh;
 	/*background-color: #ead1a9;*/
 	position: fixed;
 	top: 0;
@@ -56,8 +56,8 @@ body {
 }
 
 .secondShadow{
-	width: 7vw;
-	height: 7vh;
+	width: 10vw;
+	height: 9vh;
 	position: fixed;
 	top: 0;
 	right: 7vw;
@@ -66,8 +66,8 @@ body {
 }
 
 .statement {
-	padding-top: 2.5vh;
-	font-size: 0.8em
+	padding-top: 3.5vh;
+	font-size: 1em
 }
 
 button:hover{
@@ -569,15 +569,15 @@ img.cupImg{
 		}
 
 		.hours{
-			width: 16vw;
-			height: 4vh;
+			width: 20vw;
+			height: 5vh;
 			right: 7vw;
 		}
 
 		.secondShadow {
-		    width: 16vw;
-		    height: 4vh;
-		    right: 7vw;
+    		width: 20vw;
+    		height: 5vh;
+    		right: 7vw;
 		}
 
 		.statement {
@@ -784,19 +784,19 @@ img.cupImg{
 		}
 
 		.hours{
-			width: 15vw;
-			height: 4vh;
+			width: 20vw;
+			height: 5vh;
 			right: 7vw;
 		}
 
 		.secondShadow {
-    		width: 15vw;
-    		height: 4vh;
+    		width: 20vw;
+    		height: 5vh;
     		right: 7vw;
 		}
 
 		.statement {
-			padding-top: 1.5vh;
+			padding-top: 2vh;
 			font-size: 1.5em
 		}
 
