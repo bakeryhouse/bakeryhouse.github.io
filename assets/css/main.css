@@ -90,6 +90,15 @@ hr {
 	text-decoration: none;
 }
 
+button:hover {
+	text-decoration: underline;
+}
+
+button:focus{
+	outline: none;
+}
+
+
 #header a {
 	text-decoration: none;
 }
