@@ -394,6 +394,19 @@ a.instagram-image img {
 	background: linear-gradient(315deg, rgba(245,212,159,1) 0%, rgba(223,176,95,1) 37%, rgba(240,198,130,1) 59%, rgba(250,224,177,1) 94%);
 }
 
+#footer {
+	font-family: "bakery";
+	position: absolute;
+	bottom: 0;
+	height: auto;
+	width: 90vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	padding:0;
+	background: rgb(245,212,159);
+	background: linear-gradient(315deg, rgba(245,212,159,1) 0%, rgba(223,176,95,1) 37%, rgba(240,198,130,1) 59%, rgba(250,224,177,1) 94%);
+}
+
 .text {
 	width: 100vw;
 	float: left;
@@ -547,6 +560,10 @@ img.chiffonImg {
 
 img.cupImg{
 	max-width: 90vw;
+}
+
+img.croqImg{
+	max-width: 89vw;
 }
 
 @media only screen 
@@ -762,6 +779,63 @@ img.cupImg{
 		#wrapper.error h4{
 			font-size: 8em
 		}
+
+		/*inner page*/
+
+		#header.inner{
+			height: 12vh;
+		}
+
+		.orders {
+			margin-top: 15vh;
+		}
+
+		#wrapper.inner-wrapper {
+			width: auto;
+			position: absolute;
+		}
+
+		.orders h1 {
+			font-size: 4em;
+		}
+
+		.orders h2 {
+			font-size: 2.5em;
+		}
+
+		.show-button {
+			width: 4vw;
+		}
+
+		.parragraph{
+			font-size: 2em
+		}
+
+		.cake-images {
+			width: auto;
+			padding-top: 10vh
+		}
+
+		img.placeholder{
+			max-width: 46vw;
+		}
+
+		img.chiffonImg{
+			max-width: 20vw;
+			margin-bottom: 5vh
+		}
+
+		.mCup{
+			background-color: #f5c6c6
+		}
+
+		.mCroq{
+			background-color: #c9f4cf
+		}
+
+		.footer.inner-footer{
+			top: 5vh
+		}
     }
 
 @media only screen 
@@ -942,6 +1016,63 @@ img.cupImg{
 
 		#wrapper.error h4{
 			font-size: 8em
+		}
+
+		/*inner page*/
+
+		#header.inner{
+			height: 12vh;
+		}
+
+		.orders {
+			margin-top: 15vh;
+		}
+
+		#wrapper.inner-wrapper {
+			width: auto;
+			position: absolute;
+		}
+
+		.orders h1 {
+			font-size: 4em;
+		}
+
+		.orders h2 {
+			font-size: 2.5em;
+		}
+
+		.show-button {
+			width: 4vw;
+		}
+
+		.parragraph{
+			font-size: 2em
+		}
+
+		.cake-images {
+			width: auto;
+			padding-top: 10vh
+		}
+
+		img.placeholder{
+			max-width: 46vw;
+		}
+
+		img.chiffonImg{
+			max-width: 20vw;
+			margin-bottom: 5vh
+		}
+
+		.mCup{
+			background-color: #f5c6c6
+		}
+
+		.mCroq{
+			background-color: #c9f4cf
+		}
+
+		.footer.inner-footer{
+			top: 5vh
 		}
 
   }
