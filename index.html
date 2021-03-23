@@ -33,6 +33,7 @@
 		</div>
 		<hr>
 	</div>
+	
 	<div id="wrapper">
 			<div class="neon">
 				<img class="logo" src="assets/img/logo2.png" alt="그림빵집 Bakery House Logo">	
@@ -41,7 +42,6 @@
 				<h2>In La Cañada Flintridge since August 2007</h2>
 				<p>Bakery House specialises in traditional Korean baked goods, donuts and cookies. We also offer a variety of chiffon and roll cakes, milk breads and specialty drinks. All of our products are baked daily!</p>
 			</div>
-
 			<div class="set1">
 				<div class="content img-clickBread">
 			  		<img src="assets/img/website-01.png" alt="our signature milk bread">
@@ -94,9 +94,9 @@
 				<h2>we open MONDAY – SATURDAY from 8:00AM – 7:00PM</h2>
 				<h2><a href="tel:818-248-0945">&#x260F; 818 - 248 - 0945 &#x260F;</a></h2>
 			</div>
-			<div class="igHeader"><a href="https://www.instagram.com/bakeryhouse_lacanada" target="_blank"><h1>OUR INSTAGRAM</h1></a></div>
-			<div id="ig" class="instagram_feed">
-			</div>
+			<!-- <div class="igHeader"><a href="https://www.instagram.com/bakeryhouse_lacanada" target="_blank"><h1>OUR INSTAGRAM</h1></a></div>
+			<div id="ig" class="instagram_feed"> -->
+			<!-- </div> -->
 			<div class="end">
 				<h1 id="thankYou">thank you for visiting</h1>
 				<h1 id="kThanks">감사합니다 !!!</h1>
@@ -112,7 +112,8 @@
 				 </div>
 				<p class="copy">&#169; 2021</p>	
 			</div>
-	</div>		
+	</div>
+	<div id="floating"></div>		
 	<script>
 
 		$(document).on('click', 'a[href^="#"]', function(e) {
@@ -339,7 +340,77 @@
 				$(".clickDrink").css("color","#41312F");
 			});
 
+			function getRandomInt(min, max) {
+				return Math.floor(Math.random() * (max - min)) + min;
+			}
+
+			// var x1 = getRandomInt(25,40),
+			// 	x2 = getRandomInt(55,75),
+			// 	x3 = getRandomInt(85,95),
+			// 	y1 = getRandomInt(80,100),
+			// 	y2 = getRandomInt(155,175),
+			// 	y3 = getRandomInt(180,195),
+			// 	y4 = getRandomInt(220,235),
+			// 	y5 = getRandomInt(200,205),
+			// 	y5 = getRandomInt(240,265),
+			// 	y6 = getRandomInt(255,275),
+			// 	y7 = getRandomInt(260,280),
+			// 	y8 = getRandomInt(315,325),
+			// 	y9 = getRandomInt(300,305),
+			// 	y10 = getRandomInt(360,365),
+			// 	y11 = getRandomInt(380,395),
+			// 	y12 = getRandomInt(400,405),
+			// 	image = [],
+			// 	image2 = [],
+			// 	image3 = [];
+
+			// var pickImage = new Array ();
+			// 	image[0] = 'assets/img/cornBread.png';
+			// 	image[1] = 'assets/img/madeleine.png';
+			// 	image[2] = 'assets/img/manju.png';
+			// 	var picker = image.length;
+			// 	var x = Math.floor(picker*Math.random());
+
+			// var pickImage2 = new Array ();
+			// 	image2[0] = 'assets/img/mochi.png';
+			// 	image2[1] = 'assets/img/redBean.png';
+			// 	image2[2] = 'assets/img/redSoborro.png';
+			// 	var picker2 = image2.length;
+			// 	var x2 = Math.floor(picker2*Math.random());
+
+			// var pickImage3 = new Array ();	
+			// 	image3[0] = 'assets/img/sesame.png';
+			// 	image3[1] = 'assets/img/soborro.png';
+			// 	image3[2] = 'assets/img/twistedDonut.png';	
+			// 	var picker3 = image3.length;
+			// 	var x3 = Math.floor(picker3*Math.random());
+
+			// $("body").append('<img class="floaty" src="' + image[x] + '" style="position: relative; top: '+ y1 +'vh; left: ' + 5 + 'vw; z-index: -3">');
+			// $("body").append('<img class="floaty" src="' + image2[x2] + '" style="position: relative; top: '+ y2 +'vh; left: ' + 15 + 'vw; z-index: -3">');	
+			// $("body").append('<img class="floaty" src="' + image3[x3] + '" style="position: relative; top: '+ y3 +'vh; left: ' + 34 + 'vw; z-index: -3">');
+
+			// $("body").append('<img class="floaty" src="' + image[x2] + '" style="position: relative; top: '+ y4 +'vh; left: ' + -45 + 'vw; z-index: -3">');
+			// $("body").append('<img class="floaty" src="' + image2[x] + '" style="position: relative; top: '+ y5 +'vh; left: ' + 5 + 'vw; z-index: -3">');	
+			// $("body").append('<img class="floaty" src="' + image3[x3] + '" style="position: relative; top: '+ y6 +'vh; left: ' + -20 + 'vw; z-index: -3">');
+
+			// $("body").append('<img class="floaty" src="' + image[x3] + '" style="position: relative; top: '+ y7 +'vh; left: ' + 5 + 'vw; z-index: -3">');
+			// $("body").append('<img class="floaty" src="' + image2[x2] + '" style="position: relative; top: '+ y8 +'vh; left: ' + -20 + 'vw; z-index: -3">');	
+			// $("body").append('<img class="floaty" src="' + image3[x] + '" style="position: relative; top: '+ y9 +'vh; left: ' + 34 + 'vw; z-index: -3">');
+
+			// $("body").append('<img class="floaty" src="' + image[x] + '" style="position: relative; top: '+ y10 +'vh; left: ' + 0 + 'vw; z-index: -3">');
+			// $("body").append('<img class="floaty" src="' + image2[x2] + '" style="position: relative; top: '+ y11 +'vh; left: ' + 10 + 'vw; z-index: -3">');	
+			// $("body").append('<img class="floaty" src="' + image3[x3] + '" style="position: relative; top: '+ y12 +'vh; left: ' + 20 + 'vw; z-index: -3">');
+
+
+
+
 		})
+
+	$(window).scroll(function() {
+
+		var y = window.pageYOffset * 2
+  			$('.floaty').css({ transform: 'rotate(' + window.pageYOffset / 12 + 'deg)' });
+		}); 	
 
 	$(window).on('load', function(){
 

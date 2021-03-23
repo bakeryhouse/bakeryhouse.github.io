@@ -20,7 +20,8 @@ body {
 	top: 0;
 	right: 0;
 	height: 20vh;
-	background-color: #F4E9D9
+	background-color: #F4E9D9;
+	z-index: 2
 }
 
 #header h1 {
@@ -108,6 +109,11 @@ button:focus{
 	color: rgb(215, 30, 64);
 	padding: .5em
 }
+
+.floaty{
+	opacity: 0.3;
+}
+
 
 #wrapper{
 	font-family: "bakery";
@@ -315,7 +321,7 @@ img.logo {
 	width: 80vw;
 	height: 105vh;
 	text-align: left;
-	margin-top: 10vh;
+	margin-top: 30vh;
 	margin-left: 5vw;
 }
 
